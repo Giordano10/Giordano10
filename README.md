@@ -2,6 +2,7 @@
 
 ### A budding Python developer
 
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=Giordano10&label=Profile views&color=0e75b6&style=flat" alt="Giordano10" /> </p>
 
 - 🔭 I'm currently working on **I currently work with Python to automate tasks, create complete applications to help with everyday problems and perform data analysis.**
 
