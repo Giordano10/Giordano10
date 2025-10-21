@@ -35,3 +35,4 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=Giordano10&show_icons=true&locale=en&layout=compact" alt="Giordano10" /></p>
 
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Giordano10" alt="Giordano10" /></a> </p>
