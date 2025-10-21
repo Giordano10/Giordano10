@@ -4,6 +4,8 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Giordano10&label=Profile views&color=0e75b6&style=flat" alt="Giordano10" /> </p>
 
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Giordano10" alt="Giordano10" /></a> </p>
+
 - 🔭 I'm currently working on **I currently work with Python to automate tasks, create complete applications to help with everyday problems and perform data analysis.**
 
 - 🌱 I'm currently learning **MONGODB, **
