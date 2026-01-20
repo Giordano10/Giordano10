@@ -6,7 +6,7 @@
 
 - 🔭 I'm currently working on **I currently work with Python to automate tasks, create complete applications to help with everyday problems and perform data analysis.**
 
-- 🌱 I'm currently learning **MONGODB, **
+- 🌱 I'm currently learning **AGNO, **
 
 - 👯 I'm looking to collaborate on **Recently worked on asteroid data plotting projects based on NASA's API**
 
