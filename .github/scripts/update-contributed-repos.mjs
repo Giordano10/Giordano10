@@ -2,7 +2,7 @@ import fs from "fs/promises";
 
 const README_PATH = "README.md";
 const USERNAME = "Giordano10";
-const TOKEN = process.env.GITHUB_TOKEN;
+const TOKEN = process.env.GH_READ_TOKEN || process.env.GITHUB_TOKEN;
 
 if (!TOKEN) {
   throw new Error("GITHUB_TOKEN is required");
