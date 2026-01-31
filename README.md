@@ -50,6 +50,7 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
+- _No public contributions found._
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
