@@ -41,7 +41,7 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Giordano10&theme=github_dark" alt="Giordano10" />
 </p>
 
-<p align="left">
+<p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Giordano10&theme=github_dark" alt="GitHub stats" height="150"/>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Giordano10&theme=github_dark" alt="Top Langs" height="150"/>
 </p>
