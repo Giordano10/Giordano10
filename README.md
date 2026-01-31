@@ -32,8 +32,8 @@
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Giordano10" alt="Giordano10" /></a></p>
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Giordano10&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Giordano10&layout=compact&theme=dark&hide_border=true" alt="Top Langs" height="150"/>
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Giordano10&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" height="150"/>
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Giordano10&layout=compact&theme=dark&hide_border=true" alt="Top Langs" height="150"/>
 </p>
 
 <p align="left">
@@ -46,11 +46,6 @@
     <img alt="Giordano10's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Giordano10&theme=github-compact&hide_border=true" />
   </a>
 </p>
-
-## 📊 Coding Types Overview
-
-<!-- CODING-TYPES:START -->
-<!-- CODING-TYPES:END -->
 
 ## 🤝 Repositories I contributed to
 

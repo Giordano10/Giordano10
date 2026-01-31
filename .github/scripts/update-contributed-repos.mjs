@@ -12,10 +12,6 @@ const query = `
   query($login: String!, $first: Int!, $after: String, $from: DateTime!, $to: DateTime!) {
     user(login: $login) {
       contributionsCollection(from: $from, to: $to) {
-        totalCommitContributions
-        totalIssueContributions
-        totalPullRequestContributions
-        totalPullRequestReviewContributions
         commitContributionsByRepository {
           repository { nameWithOwner url }
           contributions { totalCount }
@@ -50,7 +46,7 @@ async function fetchContributedRepos() {
   const repos = [];
   let hasNextPage = true;
   let after = null;
-  let totals = null;
+  
 
   const from = new Date("2016-01-01T00:00:00Z").toISOString();
   const to = new Date().toISOString();
@@ -84,14 +80,6 @@ async function fetchContributedRepos() {
     const contributed = user?.repositoriesContributedTo;
     const collection = user?.contributionsCollection;
 
-    if (!totals && collection) {
-      totals = {
-        commits: collection.totalCommitContributions || 0,
-        issues: collection.totalIssueContributions || 0,
-        pullRequests: collection.totalPullRequestContributions || 0,
-        reviews: collection.totalPullRequestReviewContributions || 0,
-      };
-    }
 
     if (collection) {
       const groups = [
@@ -127,57 +115,11 @@ async function fetchContributedRepos() {
     unique.set(repo.nameWithOwner, repo.url);
   }
 
-  return {
-    repos: Array.from(unique.entries())
+  return Array.from(unique.entries())
     .sort(([a], [b]) => a.localeCompare(b))
-    .map(([name, url]) => ({ name, url })),
-    totals: totals || { commits: 0, issues: 0, pullRequests: 0, reviews: 0 },
-  };
+    .map(([name, url]) => ({ name, url }));
 }
 
-function renderCodingTypesChart(totals) {
-  const data = [
-    totals.commits || 0,
-    totals.pullRequests || 0,
-    totals.issues || 0,
-    totals.reviews || 0,
-  ];
-
-  const config = {
-    type: "radar",
-    data: {
-      labels: ["Commits", "Pull Requests", "Issues", "Code Reviews"],
-      datasets: [
-        {
-          label: "Contribution Types",
-          data,
-          backgroundColor: "rgba(56, 189, 174, 0.2)",
-          borderColor: "rgba(56, 189, 174, 1)",
-          pointBackgroundColor: "rgba(56, 189, 174, 1)",
-        },
-      ],
-    },
-    options: {
-      plugins: {
-        legend: { labels: { color: "#c9d1d9" } },
-      },
-      scales: {
-        r: {
-          angleLines: { color: "#30363d" },
-          grid: { color: "#30363d" },
-          pointLabels: { color: "#c9d1d9" },
-          ticks: { color: "#8b949e", backdropColor: "transparent" },
-        },
-      },
-    },
-  };
-
-  const chartUrl = `https://quickchart.io/chart?c=${encodeURIComponent(
-    JSON.stringify(config)
-  )}&w=700&h=400&bkg=transparent`;
-
-  return `<p align="left"><img alt="Contribution Types" src="${chartUrl}" /></p>`;
-}
 
 async function fetchRecentReposFromRest() {
   const allowedEvents = new Set([
@@ -240,30 +182,18 @@ async function updateReadme() {
   const readme = await fs.readFile(README_PATH, "utf8");
   const start = "<!-- CONTRIBUTED-REPOS:START -->";
   const end = "<!-- CONTRIBUTED-REPOS:END -->";
-  const chartStart = "<!-- CODING-TYPES:START -->";
-  const chartEnd = "<!-- CODING-TYPES:END -->";
 
   if (!readme.includes(start) || !readme.includes(end)) {
     throw new Error("README markers not found for contributed repos");
   }
 
-  if (!readme.includes(chartStart) || !readme.includes(chartEnd)) {
-    throw new Error("README markers not found for coding types chart");
-  }
-
-  const { repos, totals } = await fetchContributedRepos();
+  const repos = await fetchContributedRepos();
   const list = renderList(repos);
-  const chart = renderCodingTypesChart(totals);
 
-  const withRepos = readme.replace(
+  const updated = readme.replace(
     new RegExp(`${start}[\\s\\S]*?${end}`, "m"),
     `${start}\n${list}\n${end}`
   );
-  const updated = withRepos.replace(
-    new RegExp(`${chartStart}[\\s\\S]*?${chartEnd}`, "m"),
-    `${chartStart}\n${chart}\n${chartEnd}`
-  );
-
   await fs.writeFile(README_PATH, updated, "utf8");
 }
 
