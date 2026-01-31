@@ -47,6 +47,11 @@
   </a>
 </p>
 
+## 📊 Coding Types Overview
+
+<!-- CODING-TYPES:START -->
+<!-- CODING-TYPES:END -->
+
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
