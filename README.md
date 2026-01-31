@@ -50,6 +50,7 @@
 ## 📊 Coding Types Overview
 
 <!-- CODING-TYPES:START -->
+<p align="left"><img alt="Contribution Types" src="https://quickchart.io/chart?c=%7B%22type%22%3A%22radar%22%2C%22data%22%3A%7B%22labels%22%3A%5B%22Commits%22%2C%22Pull%20Requests%22%2C%22Issues%22%2C%22Code%20Reviews%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Contribution%20Types%22%2C%22data%22%3A%5B0%2C0%2C0%2C0%5D%2C%22backgroundColor%22%3A%22rgba(56%2C%20189%2C%20174%2C%200.2)%22%2C%22borderColor%22%3A%22rgba(56%2C%20189%2C%20174%2C%201)%22%2C%22pointBackgroundColor%22%3A%22rgba(56%2C%20189%2C%20174%2C%201)%22%7D%5D%7D%2C%22options%22%3A%7B%22plugins%22%3A%7B%22legend%22%3A%7B%22labels%22%3A%7B%22color%22%3A%22%23c9d1d9%22%7D%7D%7D%2C%22scales%22%3A%7B%22r%22%3A%7B%22angleLines%22%3A%7B%22color%22%3A%22%2330363d%22%7D%2C%22grid%22%3A%7B%22color%22%3A%22%2330363d%22%7D%2C%22pointLabels%22%3A%7B%22color%22%3A%22%23c9d1d9%22%7D%2C%22ticks%22%3A%7B%22color%22%3A%22%238b949e%22%2C%22backdropColor%22%3A%22transparent%22%7D%7D%7D%7D%7D&w=700&h=400&bkg=transparent" /></p>
 <!-- CODING-TYPES:END -->
 
 ## 🤝 Repositories I contributed to
