@@ -43,9 +43,6 @@
 
 <p align="left">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Giordano10&theme=github_dark" alt="GitHub stats" height="150"/>
-  </p>
-  
-  <p align="right">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Giordano10&theme=github_dark" alt="Top Langs" height="150"/>
 </p>
 ## 🏆 Activity Overview
