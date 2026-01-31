@@ -9,22 +9,34 @@ if (!TOKEN) {
 }
 
 const query = `
-  query($login: String!, $first: Int!, $after: String) {
+  query($login: String!, $first: Int!, $after: String, $from: DateTime!, $to: DateTime!) {
     user(login: $login) {
+      contributionsCollection(from: $from, to: $to) {
+        commitContributionsByRepository {
+          repository { nameWithOwner url }
+          contributions { totalCount }
+        }
+        issueContributionsByRepository {
+          repository { nameWithOwner url }
+          contributions { totalCount }
+        }
+        pullRequestContributionsByRepository {
+          repository { nameWithOwner url }
+          contributions { totalCount }
+        }
+        pullRequestReviewContributionsByRepository {
+          repository { nameWithOwner url }
+          contributions { totalCount }
+        }
+      }
       repositoriesContributedTo(
         first: $first
         after: $after
         contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REVIEW]
-        includeUserRepositories: false
+        includeUserRepositories: true
       ) {
-        nodes {
-          nameWithOwner
-          url
-        }
-        pageInfo {
-          hasNextPage
-          endCursor
-        }
+        nodes { nameWithOwner url }
+        pageInfo { hasNextPage endCursor }
       }
     }
   }
@@ -34,6 +46,9 @@ async function fetchContributedRepos() {
   const repos = [];
   let hasNextPage = true;
   let after = null;
+
+  const from = new Date("2016-01-01T00:00:00Z").toISOString();
+  const to = new Date().toISOString();
 
   while (hasNextPage) {
     const response = await fetch("https://api.github.com/graphql", {
@@ -48,6 +63,8 @@ async function fetchContributedRepos() {
           login: USERNAME,
           first: 50,
           after,
+          from,
+          to,
         },
       }),
     });
@@ -58,15 +75,34 @@ async function fetchContributedRepos() {
     }
 
     const data = await response.json();
-    const result = data?.data?.user?.repositoriesContributedTo;
+    const user = data?.data?.user;
+    const contributed = user?.repositoriesContributedTo;
+    const collection = user?.contributionsCollection;
 
-    if (!result) {
+    if (collection) {
+      const groups = [
+        collection.commitContributionsByRepository,
+        collection.issueContributionsByRepository,
+        collection.pullRequestContributionsByRepository,
+        collection.pullRequestReviewContributionsByRepository,
+      ];
+
+      for (const group of groups) {
+        for (const entry of group || []) {
+          if (entry?.contributions?.totalCount > 0) {
+            repos.push(entry.repository);
+          }
+        }
+      }
+    }
+
+    if (!contributed) {
       break;
     }
 
-    repos.push(...result.nodes);
-    hasNextPage = result.pageInfo.hasNextPage;
-    after = result.pageInfo.endCursor;
+    repos.push(...contributed.nodes);
+    hasNextPage = contributed.pageInfo.hasNextPage;
+    after = contributed.pageInfo.endCursor;
   }
 
   const unique = new Map();
