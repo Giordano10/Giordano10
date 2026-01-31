@@ -105,6 +105,9 @@ async function fetchContributedRepos() {
     after = contributed.pageInfo.endCursor;
   }
 
+  const restRepos = await fetchRecentReposFromRest();
+  repos.push(...restRepos);
+
   const unique = new Map();
   for (const repo of repos) {
     unique.set(repo.nameWithOwner, repo.url);
@@ -113,6 +116,55 @@ async function fetchContributedRepos() {
   return Array.from(unique.entries())
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([name, url]) => ({ name, url }));
+}
+
+async function fetchRecentReposFromRest() {
+  const allowedEvents = new Set([
+    "PushEvent",
+    "PullRequestEvent",
+    "IssuesEvent",
+    "IssueCommentEvent",
+    "PullRequestReviewEvent",
+    "PullRequestReviewCommentEvent",
+  ]);
+
+  const repos = [];
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: `bearer ${TOKEN}`,
+  };
+
+  for (let page = 1; page <= 3; page += 1) {
+    const response = await fetch(
+      `https://api.github.com/users/${USERNAME}/events/public?per_page=100&page=${page}`,
+      { headers }
+    );
+
+    if (!response.ok) {
+      break;
+    }
+
+    const events = await response.json();
+    if (!Array.isArray(events) || events.length === 0) {
+      break;
+    }
+
+    for (const event of events) {
+      if (!allowedEvents.has(event?.type)) {
+        continue;
+      }
+
+      const repoName = event?.repo?.name;
+      if (repoName) {
+        repos.push({
+          nameWithOwner: repoName,
+          url: `https://github.com/${repoName}`,
+        });
+      }
+    }
+  }
+
+  return repos;
 }
 
 function renderList(repos) {
