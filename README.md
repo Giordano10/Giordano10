@@ -32,12 +32,12 @@
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Giordano10" alt="Giordano10" /></a></p>
 
 <p align="left">
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Giordano10&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" height="150"/>
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Giordano10&layout=compact&theme=dark&hide_border=true" alt="Top Langs" height="150"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Giordano10&theme=github_dark" alt="GitHub stats" height="150"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Giordano10&theme=github_dark" alt="Top Langs" height="150"/>
 </p>
 
 <p align="left">
-  <img src="https://streak-stats.demolab.com/?user=Giordano10&theme=dark&hide_border=true" alt="GitHub Streak" height="150"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Giordano10&theme=github_dark&utcOffset=-3" alt="Productive Time" height="150"/>
 </p>
 ## 🏆 Activity Overview
 
