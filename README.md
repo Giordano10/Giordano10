@@ -31,32 +31,28 @@
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Giordano10" alt="Giordano10" /></a></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Giordano10&" alt="Giordano10" /></p>
-
-
 <p align="left">
-	<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Giordano10&layout=compact&theme=dark" alt="Top Langs" height="150"/>
-	<img src="https://github-readme-stats.vercel.app/api?username=Giordano10&show_icons=true&theme=dark" alt="GitHub stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Giordano10&show_icons=true&theme=dark&hide_border=true" alt="GitHub stats" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Giordano10&layout=compact&theme=dark&hide_border=true" alt="Top Langs" height="150"/>
 </p>
 
 <p align="left">
-	<img src="https://github-readme-streak-stats.herokuapp.com/?user=Giordano10&theme=dark" alt="GitHub Streak" height="150"/>
+  <img src="https://streak-stats.demolab.com/?user=Giordano10&theme=dark&hide_border=true" alt="GitHub Streak" height="150"/>
 </p>
 ## 🏆 Activity Overview
 
 <p align="left">
-	<a href="https://github.com/Ashutosh00710/github-readme-activity-graph"><img alt="Giordano10's Activity Graph" src="https://github-readme-activity-graph.cyclic.app/graph?username=Giordano10&bg_color=1a1b27&color=6a9fb5&line=38bdae&point=403d3d&area=true&hide_border=true" /></a>
+  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph">
+    <img alt="Giordano10's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Giordano10&theme=github-compact&hide_border=true" />
+  </a>
 </p>
 
-<details>
-	<summary>Contributed to</summary>
-	<ul>
-		<li><a href="https://github.com/PythonFloripa/certified_builder_py">PythonFloripa/certified_builder_py</a></li>
-		<li><a href="https://github.com/PythonFloripa/certified-builder-api">PythonFloripa/certified-builder-api</a></li>
-		<li><a href="https://github.com/zanfranceschi/rinha-de-backend-2023-q3">zanfranceschi/rinha-de-backend-2023-q3</a></li>
-		<li>...e outros 43 repositórios</li>
-	</ul>
-</details>
+## 🤝 Repositories I contributed to
+
+<!-- CONTRIBUTED-REPOS:START -->
+<!-- CONTRIBUTED-REPOS:END -->
+
+_Updated automatically via GitHub Actions._
 
 
 
