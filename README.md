@@ -58,7 +58,6 @@
 
 <!-- CONTRIBUTED-REPOS:START -->
 - [dw-0/kiauh](https://github.com/dw-0/kiauh)
-- [Giordano10/dependabot-core](https://github.com/Giordano10/dependabot-core)
 - [Giordano10/filopedia](https://github.com/Giordano10/filopedia)
 - [Giordano10/Giordano10](https://github.com/Giordano10/Giordano10)
 - [Giordano10/kiauh](https://github.com/Giordano10/kiauh)
