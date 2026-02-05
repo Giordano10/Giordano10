@@ -61,7 +61,6 @@
 - [Giordano10/filopedia](https://github.com/Giordano10/filopedia)
 - [Giordano10/Giordano10](https://github.com/Giordano10/Giordano10)
 - [Giordano10/kiauh](https://github.com/Giordano10/kiauh)
-- [Giordano10/Literagent](https://github.com/Giordano10/Literagent)
 - [Giordano10/roteiro-modelo-evento-python-floripa](https://github.com/Giordano10/roteiro-modelo-evento-python-floripa)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
 - [maxsonferovante/roteiro-modelo-evento-python-floripa](https://github.com/maxsonferovante/roteiro-modelo-evento-python-floripa)
