@@ -58,6 +58,7 @@
 
 <!-- CONTRIBUTED-REPOS:START -->
 - [dw-0/kiauh](https://github.com/dw-0/kiauh)
+- [Giordano10/agno](https://github.com/Giordano10/agno)
 - [Giordano10/filopedia](https://github.com/Giordano10/filopedia)
 - [Giordano10/Giordano10](https://github.com/Giordano10/Giordano10)
 - [Giordano10/kiauh](https://github.com/Giordano10/kiauh)
@@ -66,6 +67,7 @@
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
 - [maxsonferovante/roteiro-modelo-evento-python-floripa](https://github.com/maxsonferovante/roteiro-modelo-evento-python-floripa)
 - [PGuardini/filopedia](https://github.com/PGuardini/filopedia)
+- [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
