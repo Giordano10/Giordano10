@@ -57,10 +57,12 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
+- [aden-hive/hive](https://github.com/aden-hive/hive)
 - [dw-0/kiauh](https://github.com/dw-0/kiauh)
 - [Giordano10/agno](https://github.com/Giordano10/agno)
 - [Giordano10/filopedia](https://github.com/Giordano10/filopedia)
 - [Giordano10/Giordano10](https://github.com/Giordano10/Giordano10)
+- [Giordano10/hive](https://github.com/Giordano10/hive)
 - [Giordano10/kiauh](https://github.com/Giordano10/kiauh)
 - [Giordano10/picoclaw](https://github.com/Giordano10/picoclaw)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
