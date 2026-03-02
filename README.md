@@ -66,7 +66,6 @@
 - [Giordano10/kiauh](https://github.com/Giordano10/kiauh)
 - [Giordano10/picoclaw](https://github.com/Giordano10/picoclaw)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
-- [PGuardini/filopedia](https://github.com/PGuardini/filopedia)
 - [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
 <!-- CONTRIBUTED-REPOS:END -->
 
