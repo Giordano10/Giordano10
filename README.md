@@ -57,8 +57,6 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
-- [aden-hive/hive](https://github.com/aden-hive/hive)
-- [Giordano10/hive](https://github.com/Giordano10/hive)
 - [Giordano10/picoclaw](https://github.com/Giordano10/picoclaw)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
 - [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
