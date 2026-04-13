@@ -59,7 +59,6 @@
 <!-- CONTRIBUTED-REPOS:START -->
 - [Giordano10/picoclaw](https://github.com/Giordano10/picoclaw)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
-- [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
