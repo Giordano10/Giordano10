@@ -57,7 +57,6 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
-- [Giordano10/picoclaw](https://github.com/Giordano10/picoclaw)
 - [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
 <!-- CONTRIBUTED-REPOS:END -->
 
