@@ -57,7 +57,7 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
-- [sipeed/picoclaw](https://github.com/sipeed/picoclaw)
+- _No public contributions found._
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
