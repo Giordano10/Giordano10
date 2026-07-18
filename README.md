@@ -57,7 +57,7 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
-- _No public contributions found._
+- [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
