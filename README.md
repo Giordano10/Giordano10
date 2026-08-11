@@ -60,7 +60,6 @@
 - [Giordano10/projeto-tvbox](https://github.com/Giordano10/projeto-tvbox)
 - [Giordano10/site-ludddic](https://github.com/Giordano10/site-ludddic)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
-- [maquisaao/site-ludddic](https://github.com/maquisaao/site-ludddic)
 <!-- CONTRIBUTED-REPOS:END -->
 
 _Updated automatically via GitHub Actions._
