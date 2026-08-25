@@ -57,7 +57,6 @@
 ## 🤝 Repositories I contributed to
 
 <!-- CONTRIBUTED-REPOS:START -->
-- [Giordano10/projeto-tvbox](https://github.com/Giordano10/projeto-tvbox)
 - [Giordano10/site-ludddic](https://github.com/Giordano10/site-ludddic)
 - [Giordano10/VCSP](https://github.com/Giordano10/VCSP)
 <!-- CONTRIBUTED-REPOS:END -->
